@@ -1,5 +1,12 @@
 # Changelog
 
+## 58.0.22
+
+### Patch Changes
+
+- [Android] Add `colorOverrides` to the Jetpack Compose `Host`. It replaces individual Material 3 color roles in the palette from `colorScheme` and `seedColor`. Compose children and `useMaterialColors()` use the result. ([#51650](https://github.com/expo/expo/pull/51650) by [@juliusmarminge](https://github.com/juliusmarminge))
+- [iOS] Stop the community `PagerView` from pressing a `Pressable` on a page when a swipe starts or ends on it, or when a tap stops a moving page. The pager now takes the touch from its pages while it scrolls, like React Native's `ScrollView`. This needs iOS 18 or later. ([#51799](https://github.com/expo/expo/pull/51799) by [@julian-gargicevich](https://github.com/julian-gargicevich))
+
 ## 58.0.21
 
 ### Patch Changes
